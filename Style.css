@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.game-container {
+    background: rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#message {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.correct {
+    color: #00ff00;
+    animation: pulse 0.5s infinite alternate;
+}
+
+.wrong {
+    color: #ff4d4d;
+    animation: shake 0.3s;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
